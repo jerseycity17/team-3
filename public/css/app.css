@@ -689,54 +689,18 @@ body {
    color: #ffffff;
 }
 
-
-/*IDs*/
-
 #heading {
    background: url("/img/background.jpeg") no-repeat center center;
-   background-attachment: fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-   background-size: cover;
-   font-size: 165%;
-}
-
-#categories {
-   padding: 40px 0px 80px;
-}
-
-#about {
-   background: linear-gradient( rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), url("/img/bk.jpeg") no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
    text-align: center;
 }
 
-#team {
-   background: url("/img/background.jpeg") no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
+#services {
+   background-image: background-image: url("/img/bg.jpeg");
 }
-
-#profile {
-   max-height: 75%;
-   background: url("/img/background.jpeg") no-repeat center center;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-}
-
 #login-form {
    background-color: rgba(229, 228, 255, 0.3);
-   margin: 50px 40px;
-}
-
-#user-info {
-   padding: 80px 80px;
+   margin: 50px 50px;
 }
