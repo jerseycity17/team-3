@@ -105,6 +105,18 @@
 						</table>
 			</div>
 		</div>
+	<div id = "wrapper">
+		<div style = "float: left; width: 600px; height: 600px; padding: 20px; z-index: 1">
+				<!-- Campaign Information -->
+				<section id="main">
+						<h1>Campaign Impact</h1>
+						<p>Donation Total: $5</p>
+						<p>Maximum Degree Reached: 2</p>
+						<p>People Reached: 10</p>
+						<p>Number of Shares: 17</p>
+						<p>Hours Volunteered: 10</p>
+			</div>
+	</html>
 		<!-- Scripts -->
 			<script>
 				if ('addEventListener' in window) {
