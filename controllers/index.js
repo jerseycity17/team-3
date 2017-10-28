@@ -15,4 +15,12 @@ router.get('/', (req, res) => {
   res.render('homepage');
 });
 
+router.get('/createcampaignchallenge', (req, res) => {
+   res.render('newcampaignchallenge')
+})
+
+router.get('/creatorreport', (req, res) => {
+   res.render('creatorreport')
+})
+
 module.exports = router;
