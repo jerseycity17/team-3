@@ -20,78 +20,66 @@
 						<h1>Dashboard</h1>
 		</div>
 		<!-- Wrapper -->
-		
-			<div style = "float: left; width: 700px">
+			<div style = "float: left; width: 600px">
 			<div id="wrapper">
 				<!-- Active challenges -->
 				<section id="main">
 						<h1>Active challenges</h1>
-						<table width = "500px" align = "center" style = "padding: 20px; border: 1px solid grey">
+						<table width = "400px" align = "center" style = "padding: 20px; border: 1px solid grey">
 							<tr>
-								<td><u>Campaign Name</u></td>
-								<td><u>Challenge Number</u></td>
+								<td><u>Name</u></td>
+								<td><u>Status</u></td>
 								<td><u>Expiration</u></td>
-                                <td></td>
-							</tr>
-							<tr>
-								<td>Campaign 1</td>
-								<td>6</td>
-								<td>Nov 1 @ 12:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
-							</tr>
-							<tr>
-								<td>Campaign 2</td>
-								<td>0/6</td>
-								<td>Dec 2 @ 1:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
-							</tr>
-							<tr>
-								<td>Campaign 3</td>
-								<td>4/6</td>
-								<td>Dec 6 @ 3:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
-							</tr>
-							<tr>
-								<td>Campaign 4</td>
-								<td>4/6</td>
-								<td>Dec 6 @ 3:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
-							</tr>
-							<tr>
-								<td>Campaign 5</td>
-								<td>4/6</td>
-								<td>Dec 6 @ 3:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
-							</tr>
-							<tr>
-								<td>Campaign 6</td>
-								<td>4/6</td>
-								<td>Dec 6 @ 3:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 1</td>
 								<td>2/6</td>
 								<td>Nov 1 @ 12:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 2</td>
 								<td>0/6</td>
 								<td>Dec 2 @ 1:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 3</td>
 								<td>4/6</td>
 								<td>Dec 6 @ 3:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 4</td>
 								<td>4/6</td>
 								<td>Dec 6 @ 3:00PM</td>
-                                <td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 5</td>
+								<td>4/6</td>
+								<td>Dec 6 @ 3:00PM</td>
+							</tr>
+							<tr>
+								<td>Campaign 6</td>
+								<td>4/6</td>
+								<td>Dec 6 @ 3:00PM</td>
+							</tr>
+							<tr>
+								<td>Campaign 1</td>
+								<td>2/6</td>
+								<td>Nov 1 @ 12:00PM</td>
+							</tr>
+							<tr>
+								<td>Campaign 2</td>
+								<td>0/6</td>
+								<td>Dec 2 @ 1:00PM</td>
+							</tr>
+							<tr>
+								<td>Campaign 3</td>
+								<td>4/6</td>
+								<td>Dec 6 @ 3:00PM</td>
+							</tr>
+							<tr>
+								<td>Campaign 4</td>
+								<td>4/6</td>
+								<td>Dec 6 @ 3:00PM</td>
 							</tr>
 							
 						</table>
@@ -126,12 +114,13 @@
 			<div id="wrapper">
 				<!-- invites -->
 				<section id="main">
+						<p style = "font-size: 40px; position:fixed" ><a href = "./newcampaigninfo.html" >+</a></p>
 						<h1>Campaigns</h1>
 						<table width = "450px" style = "padding: 20px; border: 1px solid grey">
 							<tr>
 								<td><u>Campaign</u></td>
 								<td><u>Organization</u></td>
-								<td><u></u></td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>My Campaign</td>
@@ -143,6 +132,7 @@
 								<td>Humaine Society</td>
 								<td><input id="submit_button" type="submit" value="View" /></td>
 							</tr>
+							
 						</table>
 			</div>
 		</div>
