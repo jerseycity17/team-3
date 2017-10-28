@@ -23,4 +23,7 @@ router.get('/creatorreport', (req, res) => {
    res.render('creatorreport')
 })
 
+router.get('/forgotpass', (req, res) => {
+   res.render('forgotpass')
+})
 module.exports = router;
