@@ -1,5 +1,5 @@
 {
-  "name": "time-is-money",
+  "name": "jpmc3",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "start": "nodemon -L app.js",
     "test": "jest"
   },
-  "author": "Heidi Wu, Dandan Lin, Risa Toyoshima",
+  "author": "Alex Smithmarist, Ali Sytsma, Dandan Lin, Kaitlyn Dominguez, Mohammed Mahmud, Olga Kent",
   "license": "ISC",
   "devDependencies": {
     "jest": "^21.2.1"
@@ -29,6 +29,7 @@
     "promise": "^8.0.1",
     "sequelize": "^4.13.3",
     "sequelize-cli": "^3.0.0",
-    "social-login": "^0.2.8"
+    "social-login": "^0.2.8",
+    "sqlite": "^2.8.0"
   }
 }

@@ -4,20 +4,20 @@
     "password": "jpmc3_pass",
     "database": "jpmc3_development",
     "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "dialect": "sqlite"
   },
   "test": {
     "username": "jpmc3",
     "password": "jpmc3_pass",
     "database": "jpmc3_test",
     "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "dialect": "sqlite"
   },
   "production": {
     "username": "jpmc3",
     "password": "jpmc3_pass",
     "database": "jpmc3_production",
     "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "dialect": "sqlite"
   }
 }
