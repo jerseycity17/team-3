@@ -16,12 +16,14 @@ Create Table if not exists UserInfo
 Create table if not exists CampaignDetail
 (
     creator_id int,
+
     campaign_id int auto_increment Primary Key,
     campaign_name text Not null,
     campaign_info Text Not Null,
     campaign_hashtag Text,
     campaign_degree Int not Null Default 1,
     expiration Datetime,
+  
     Foreign Key (creator_id) references UserInfo(user_id)
 );
 
@@ -52,6 +54,7 @@ Create table if not exists ChallengeStatus
 );
 
 Create table if not exists InvitedBy
+
 (
     parent int,
     invitee int,
@@ -60,6 +63,7 @@ Create table if not exists InvitedBy
     Primary Key (parent, invitee, campaign_id),
     Foreign Key(parent) references UserInfo(user_id),
     Foreign Key (invitee) references UserInfo(user_id),
+
     Foreign Key (campaign_id) references CampaignDetail(campaign_id)
 );
 
@@ -68,5 +72,6 @@ Explain CampaignDetail;
 Explain CampaignDegree;
 Explain ChaStatus;
 Explain Invitedby;*/
+
 
 

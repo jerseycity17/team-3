@@ -1,79 +1,169 @@
+<!--Main Navigation-->
 <!--/.Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">Six Degree</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark mdb-color darken-1">
+   <div class="container">
+      <a class="navbar-brand" href="#heading">Six Degrees</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> My Account</a>
-          <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Settings</a>
-            <a class="dropdown-item" href="/logout">Log Out</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+               <a class="nav-link" href="/createcampaignchallenge">Create Campaign</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/creatorreport">Checkout Creator Report</a>
+            </li>
+         </ul>
+         <ul class="navbar-nav ml-auto nav-flex-icons">
+            {{#if cur_user}}
+               <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light" href="/profile">Hello, {{cur_user.username}}</a>
+               </li>
+               <li class="nav-item">
+                  <a href="/logout" class="btn btn-deep-orange btn-sm wow fadeInRight" rel="nofollow">Log Out</a>
+               </li>
+               {{ else }}
+               <li class="nav-item">
+                  <a href="/signup" class="btn btn-light-green btn-sm wow fadeInRight" rel="nofollow">Sign Up</a>
+               </li>
+               <li class="nav-item">
+                  <a href="/login" class="btn btn-primary btn-sm wow fadeInRight" rel="nofollow">Log In</a>
+               </li>
+            {{/if}}
+         </ul>
+      </div>
+   </div>
 </nav>
 
-<div id="profile" class="view hm-black-light">
-  <div class="full-bg-img flex-center">
-    <ul id="banner" class="wow fadeInUp">
-      <li>
-        <h1 class="h1-responsive font-bold">Hello, {{user.username}}!</h1>
-      </li>
-      <li>
-        <p class="px-5 pb-4">Lorem ipsum dolor sit amet, nulla mundi tractatos ne his, cu eum delenit voluptua philosophia. Vis natum appareat posidonium ne, eius oportere cu ius. Mea nemore suscipit eleifend ut, nam ex aeterno periculis. Virtute laboramus argumentu est at,
-          cum ea tempor placerat pertinacia. Nibh aliquip tamquam mel ea, vel ex nonumy fuisset, aliquip veritus apeirian mea cu. In case causae nominavi usu. Ludus suavitate nam id, justo aliquip contentiones sed ad, vidisse omittam fastidii pro ei.
-          Ex homero facilisis mel. Duo in quod accusam, id vel doming nemore, cum odio possim ad. Nobis solet at mel, vim noster euismod id, te nec augue suscipit.</p>
-      </li>
-      <li>
-        <button class="btn btn-outline-white"><h1 class="h2-responsive yellow-text"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 </h1></button>
-    </ul>
-  </div>
+<!-- Wrapper -->
+<div style="float:left; width: 100%; background-color: black; background-image: url(/img/dash.jpeg)">
+   <!-- Active challenges -->
+   <section id="main">
+      <h1>Dashboard</h1>
 </div>
 
-<div id="user-info" class="container-fluid">
-  <div class="container">
-    <div class="flex-center mask">
-      <div class="col-md-5">
-        <!--Panel-->
-        <div class="mt-4 card card-body z-depth-3">
-          <div class="text-center">
-            <li>
-              <h2 class="h2-responsive black-text font-bold">Check Your Current Services</h2></li>
-            <hr>
-            <!-- <li><h4 class="black-text h4-responsive">Dog Walking</h4></li>
-          <li><h4 class="black-text h4-responsive">Toddler Sitting (Ages 3-7)</h4></li>
-          <li><h4 class="black-text h4-responsive">Lawn Mowing</h4></li>
-          <hr> -->
-            <li><a href="#" class="mb-1 btn btn-outline-black wow fadeIn" data-wow-delay="0.2s">Offer Service</a></li>
-          </div>
-        </div>
-      </div>
-      <!--/.Panel-->
-      <!--Panel-->
-      <div class="col-md-5 offset-md-2">
-        <div class="mt-4 card card-body z-depth-3">
-          <div class="text-center">
-            <li>
-              <h2 class="h2-responsive black-text font-bold">View Your Request History</h2></li>
-            <hr>
-            <li><a href="#" class="mb-1 btn btn-outline-black wow fadeIn" data-wow-delay="0.2s">My Requests</a></li>
-          </div>
-        </div>
-        <!--/.Panel-->
-      </div>
-    </div>
-  </div>
+<!-- Wrapper -->
+
+<div style="float: left; width: 600px; height: 600px; padding: 20px; z-index: 1;">
+   <!-- Active challenges -->
+   <section id="main">
+      <h1>Active challenges</h1>
+      <table width="460px" align="center" style="padding: 10px; border: 1px solid grey">
+         <tr>
+            <td><u>Name</u></td>
+            <td><u>Status</u></td>
+            <td><u>Expiration</u></td>
+            <td><u></u></td>
+         </tr>
+         <tr>
+            <td>Campaign 1</td>
+            <td>2/6</td>
+            <td>Nov 1 @ 12:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 2</td>
+            <td>0/6</td>
+            <td>Dec 2 @ 1:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 3</td>
+            <td>4/6</td>
+            <td>Dec 6 @ 3:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 4</td>
+            <td>4/6</td>
+            <td>Dec 6 @ 3:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 5</td>
+            <td>4/6</td>
+            <td>Dec 6 @ 3:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 6</td>
+            <td>4/6</td>
+            <td>Dec 6 @ 3:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 1</td>
+            <td>2/6</td>
+            <td>Nov 1 @ 12:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 2</td>
+            <td>0/6</td>
+            <td>Dec 2 @ 1:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 3</td>
+            <td>4/6</td>
+            <td>Dec 6 @ 3:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+         <tr>
+            <td>Campaign 4</td>
+            <td>4/6</td>
+            <td>Dec 6 @ 3:00PM</td>
+            <td><input id="submit_button" type="submit" value="Quit" /></td>
+         </tr>
+
+      </table>
 </div>
 
-<!--Footer-->
-<footer class="footer center-on-small-only">
-  <a class="up-arrow text-white" href="#profile" data-toggle="tooltip" title="To Top">
-      <i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
-</footer>
-<!--/.Footer-->
+<div style="float: right; width: 600px; padding: 20px">
+   <!-- invites -->
+   <section id="main">
+      <h1>Invites</h1>
+      <table width="460px" align="center" style="padding: 10px; border: 1px solid grey">
+         <tr>
+            <td><u>Name</u></td>
+            <td><u>Campaign</u></td>
+            <td><u></u></td>
+         </tr>
+         <tr>
+            <td>Kate</td>
+            <td>Campaign 7</td>
+            <td><input id="submit_button" type="submit" value="Accept" /></td>
+         </tr>
+         <tr>
+            <td>Ali</td>
+            <td>Campaign 8</td>
+            <td><input id="submit_button" type="submit" value="Accept" /></td>
+         </tr>
+      </table>
+   </section>
+</div>
+
+<div style="float: right; width: 600px; padding: 20px">
+   <!-- invites -->
+   <section id="main">
+      <h1>Campaigns</h1>
+      <table width="460px" align="center" style="padding: 10px; border: 1px solid grey">
+         <tr>
+            <td><u>Campaign</u></td>
+            <td><u>Organization</u></td>
+            <td><u></u></td>
+         </tr>
+         <tr>
+            <td>My Campaign</td>
+            <td>IJM</td>
+            <td><input id="submit_button" type="submit" value="Edit" /></td>
+         </tr>
+         <tr>
+            <td>My Campaign</td>
+            <td>Humaine Society</td>
+            <td><input id="submit_button" type="submit" value="Edit" /></td>
+         </tr>
+      </table>
+   </section>
+</div>
