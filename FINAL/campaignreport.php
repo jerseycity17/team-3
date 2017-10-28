@@ -33,7 +33,7 @@
             <a href="https://instagram.com/home?status">
             <img src= "images/insta.png" alt= "Instagram" width= "50" height="50">
             </a>
-            <a href="https://facebook.com>
+            <a href="https://facebook.com">
             <img src= "images/fb.png" alt= "Facebook" width = "50" height="50">
             </a>
 			</div>
