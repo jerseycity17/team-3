@@ -4,20 +4,20 @@
     "password": "c4g3_pass",
     "database": "c4g3_development",
     "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "dialect": "sqlite"
   },
   "test": {
     "username": "c4g3",
     "password": "c4g3_pass",
     "database": "c4g3_test",
     "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "dialect": "sqlite"
   },
   "production": {
     "username": "c4g3",
     "password": "c4g3_pass",
     "database": "c4g3_production",
     "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "dialect": "sqlite"
   }
 }
