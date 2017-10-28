@@ -27,59 +27,70 @@
 						<h1>Active challenges</h1>
 						<table width = "400px" align = "center" style = "padding: 20px; border: 1px solid grey">
 							<tr>
-								<td><u>Name</u></td>
-								<td><u>Status</u></td>
+								<td><u>Campaign Name</u></td>
+								<td><u>Challenge Number</u></td>
 								<td><u>Expiration</u></td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>Campaign 1</td>
-								<td>2/6</td>
+								<td>6</td>
 								<td>Nov 1 @ 12:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 2</td>
-								<td>0/6</td>
+								<td>2</td>
 								<td>Dec 2 @ 1:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 3</td>
-								<td>4/6</td>
+								<td>4</td>
 								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 4</td>
-								<td>4/6</td>
+								<td>1</td>
 								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 5</td>
-								<td>4/6</td>
+								<td>3</td>
 								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 6</td>
-								<td>4/6</td>
+								<td>5</td>
 								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 1</td>
-								<td>2/6</td>
+								<td>7</td>
 								<td>Nov 1 @ 12:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 2</td>
-								<td>0/6</td>
+								<td>8</td>
 								<td>Dec 2 @ 1:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 3</td>
-								<td>4/6</td>
+								<td>9</td>
 								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							<tr>
 								<td>Campaign 4</td>
-								<td>4/6</td>
+								<td>10</td>
 								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
 							</tr>
 							
 						</table>
