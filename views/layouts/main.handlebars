@@ -6,30 +6,29 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-   <title>Six Degree!</title>
+   <title>Six Degrees</title>
 
-   <!-- Font Awesome -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-   <!-- Font Roboto -->
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
-
-   <!-- Bootstrap core CSS -->
    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-   <!-- Material Design Bootstrap -->
    <link href="css/mdb.min.css" rel="stylesheet">
-
    <link href="css/app.css" rel="stylesheet">
 </head>
 
 <body>
 
    {{{body}}}
+   
+   <!-- Scripts -->
+   <script>
+      if ('addEventListener' in window) {
+         window.addEventListener('load', function() {
+            document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+         });
+         document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+      }
+   </script>
 
-   <!-- SCRIPTS -->
-
-   <!-- JQuery -->
    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 
    <!-- Bootstrap dropdown -->
@@ -82,15 +81,6 @@
             });
          });
       })
-   </script>
-   <!-- Scripts -->
-   <script>
-      if ('addEventListener' in window) {
-         window.addEventListener('load', function() {
-            document.body.className = document.body.className.replace(/\bis-loading\b/, '');
-         });
-         document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-      }
    </script>
 
 </body>
