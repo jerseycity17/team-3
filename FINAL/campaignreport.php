@@ -109,11 +109,35 @@
 		<div style = "float: left; width: 600px; height: 600px; padding: 20px; z-index: 1">
 				<!-- Campaign Information -->
 				<section id="main">
+				
 						<h1>Campaign Impact</h1>
 						<p>Donation Total: $5</p>
+						<!--
+							SELECT quantity 
+							FROM UserChallengeStat
+							WHERE campaign_id = 'campaign_id'
+							GROUP BY campaign_id;
+						-->
 						<p>Maximum Degree Reached: 2</p>
+						<!--
+							SELECT max(degree) 
+							FROM UserCampaignStat
+							WHERE campaign_id = 'campaign_id'
+						-->
 						<p>People Reached: 10</p>
+						<!--
+							SELECT COUNT (*)
+							FROM UserCampaignStat
+							WHERE campaign_id = 'campaign_id'
+						-->
 						<p>Number of Shares: 17</p>
+						<!--
+							SELECT COUNT (*)
+							FROM UserChallengeStat
+							WHERE campaign_id = 'campaign_id'
+							AND challenge_type = 'challenge_type'
+							AND status = "complete"
+						-->
 						<p>Hours Volunteered: 10</p>
 			</div>
 	</html>
