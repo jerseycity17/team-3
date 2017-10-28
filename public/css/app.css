@@ -1,0 +1,179 @@
+/*Media Query*/
+
+/*@media (max-width: 740px) {
+  .full-height, .full-height body, .full-height header, .full-height header .view {
+    height: 750px;
+  }
+  body {
+    background-attachment: scroll !important;
+  }
+}
+
+@media (min-width: 741px) and (max-height: 638px) {
+  .full-height, .full-height body, .full-height header, .full-height header .view {
+    height: 750px;
+  }
+}*/
+
+
+/*Elements*/
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+a {
+  color: #fff;
+}
+
+footer {
+  background-color: #31b0df;
+  margin-top: -1px;
+  text-align: center;
+}
+
+body {
+  background-image: url("/img/community.jpeg");
+  background-repeat: repeat;
+}
+
+/*Classes*/
+.view {
+  height: 100%;
+}
+
+.intro-2 {
+  background: url("/img/community.jpeg") repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/*Navbar*/
+.navbar {
+*background-color: transparent;
+}
+
+.scrolling-navbar {
+  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+  background-color: #31b0df;
+}
+
+.navbar .btn-group .dropdown-menu a:hover {
+  color: #000 !important;
+}
+
+.navbar .btn-group .dropdown-menu a:active {
+  color: #fff !important;
+}
+
+.flex-center {
+  color: #fff;
+}
+
+.flex-container {
+  display: flex;
+  /*overflow-y: scroll;*/
+  padding: 80px 0px;
+  min-height: 100%;
+}
+
+.thumbnail {
+  padding: 20px;
+}
+
+.categories-img {
+  border-radius: 5px;
+}
+
+.categories-img:hover {
+  opacity: 0.7;
+}
+
+/*Login Form*/
+
+.md-form input[type=text]:focus:not([readonly]), .md-form input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #8EDEF8;
+  box-shadow: 0 1px 0 0 #8EDEF8;
+}
+
+.md-form input[type=text]:focus:not([readonly])+label, .md-form input[type=password]:focus:not([readonly])+label {
+  color: #8EDEF8;
+}
+
+.md-form .form-control {
+  color: #fff;
+}
+
+.md-form .prefix {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.md-form label {
+  color: #ffffff;
+}
+
+
+/*IDs*/
+
+#heading {
+  background: url("/img/background.jpeg") no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 165%;
+}
+
+#categories {
+  padding: 40px 0px 80px;
+}
+
+#about {
+  background: linear-gradient( rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), url("/img/background.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: right;
+}
+
+
+#team {
+  background: url("/img/background.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#profile {
+  max-height: 75%;
+  background: url("/img/background.jpeg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#login-form {
+  background-color: rgba(229, 228, 255, 0.3);
+  margin: 50px 40px;
+}
+
+#user-info {
+  padding: 80px 80px;
+}
