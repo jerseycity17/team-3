@@ -53,7 +53,6 @@
 							</tr>
 							<tr>
 								<td>Campaign 1</td>
-								
 				                <td>Code for Good in JC</td>
 				                <td>#CfG</td>
 								<td>Nov 1 @ 12:00PM</td>
